@@ -14,7 +14,6 @@ var licenseKeyFormatting = function (s, k) {
   const string = s.split('-').join('');
   const arr = [];
   let l = string.length;
-  let ptr = l;
   while (l >= k) {
     arr.unshift(string.substring(l - k, l));
     l -= k;
