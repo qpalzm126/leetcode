@@ -13,12 +13,22 @@
 var twoSum = function (nums, target) {
   let m = new Map();
 
-  nums.forEach((num, i) => {
-    const diff = target - num;
-    if (m.has(diff)) {
-      return [m.get(diff), i];
+  for (let i=0;i<nums.length;i++){
+    const diff = target-nums[i]
+    if (m.has(diff)){
+      return [m.get(diff),i]
+    }else{
+      m.set(nums[i],i)
     }
-    m.set(num, i);
-  });
+  } 
+
+  // nums.forEach((num, i) => {
+  //   console.log(num)
+  //   const diff = target - nums[i];
+  //   if (m.has(diff)) {
+  //     return [m.get(diff), i];
+  //   }
+  //   m.set(nums[i], i);
+  // });
 };
 // @lc code=end
