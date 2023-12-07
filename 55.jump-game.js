@@ -9,6 +9,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
+//greed
 var canJump = function (nums) {
   if (nums.length <= 1) {
     return true
