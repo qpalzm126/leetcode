@@ -21,7 +21,6 @@ var licenseKeyFormatting = function (s, k) {
   if (l > 0) {
     arr.unshift(string.substring(0, l));
   }
-  console.log(arr);
   return arr.join('-').toUpperCase();
 };
 // @lc code=end
